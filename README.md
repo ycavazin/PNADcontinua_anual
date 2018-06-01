@@ -40,5 +40,6 @@ mysql> `SET GLOBAL innodb_buffer_pool_size=402653184;`
 
 ## Creating the Table
 Use .sql file #1
+
 *Note: In order to have a better view of each publication made by IBGE, a column named "edicao" was created*
 
