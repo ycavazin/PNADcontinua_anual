@@ -18,10 +18,10 @@ https://downloads.ibge.gov.br/downloads_estatisticas.htm?caminho=Trabalho_e_Rend
 
 ## Server-side modifications
 
-### Most of the modifications were done at my.ini file at:
-C:\ProgramData\MySQL\MySQL Server 8.0
+### Modifications at my.ini file
+`C:\ProgramData\MySQL\MySQL Server 8.0\my.ini`
 
-### Some was made directly on live mysql
+### Modifications on live mysql
 
 * *Error_Code: 1206*
 
