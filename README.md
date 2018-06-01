@@ -34,3 +34,11 @@ Changed innodb_buffer_pool_size to 402653184 directly at SQL
 mysql> `SET GLOBAL innodb_buffer_pool_size=402653184;`
 
 * *Error_Code:* 
+
+## Creating the Schema
+`CREATE SCHEMA 'microdados_mb';`
+
+## Creating the Table
+Use .sql file #1
+*Note: In order to have a better view of each publication made by IBGE, a column named "edicao" was created*
+
