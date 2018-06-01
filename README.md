@@ -16,15 +16,18 @@ https://downloads.ibge.gov.br/downloads_estatisticas.htm?caminho=Trabalho_e_Rend
 4. Provide the data with semantics on a PowerBI dashboard;
 5. Provide the data as maps (to be discussed);
 
-#Server-side modifications
-Most of the modifications were done at my.ini file at:
+## Server-side modifications
+
+### Most of the modifications were done at my.ini file at:
 C:\ProgramData\MySQL\MySQL Server 8.0
 
-* Error_Code: 1206
+### Some was made directly on live mysql
+
+* *Error_Code: 1206*
 First show current variable size:
 mysql> SHOW VARIABLES LIKE '%innodb_buffer_pool_size%';
 
 Changed innodb_buffer_pool_size to 402653184 directly at SQL
 mysql> SET GLOBAL innodb_buffer_pool_size=402653184;
 
-* Error_Code: 
+* *Error_Code:* 
