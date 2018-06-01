@@ -26,6 +26,7 @@ C:\ProgramData\MySQL\MySQL Server 8.0
 * *Error_Code: 1206*
 
 First show current variable size:
+
 mysql> `SHOW VARIABLES LIKE '%innodb_buffer_pool_size%'`;
 
 Changed innodb_buffer_pool_size to 402653184 directly at SQL
