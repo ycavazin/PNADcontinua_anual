@@ -4,7 +4,7 @@
 
 -- 2012
 ------------------------------------------------
-LOAD DATA INFILE 'PNADC_2012_entr1_20180504.txt' 
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\PNADC_2012_entr1_20180504.txt' 
 INTO TABLE pnad_continua_anual LINES TERMINATED BY '\r\n' (@row) 
 SET 
 Edicao =  '2012',
@@ -400,7 +400,7 @@ SD06003 = ' ';
 
 -- 2013
 ------------------------------------------------
-LOAD DATA INFILE 'PNADC_2013_entr1_20180504.txt' 
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\PNADC_2013_entr1_20180504.txt' 
 INTO TABLE pnad_continua_anual LINES TERMINATED BY '\r\n' (@row) 
 SET 
 Edicao =  '2013',
@@ -797,7 +797,7 @@ SD06003 = ' ';
 
 -- 2014
 ------------------------------------------------
-LOAD DATA INFILE 'PNADC_2014_entr1_20180504.txt' 
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\PNADC_2014_entr1_20180504.txt' 
 INTO TABLE pnad_continua_anual LINES TERMINATED BY '\r\n' (@row) 
 SET 
 Edicao =  '2014',
