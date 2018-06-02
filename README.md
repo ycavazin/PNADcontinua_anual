@@ -42,6 +42,13 @@ Then, execute the Insert with the variable value in the beggining of the file pa
 
 mysql> `LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\PNADC_2012_entr1_20180504.txt'`
 
+* *Error_Code: 2013 => Lost connection to MySQL server during query*
+
+First show current time out value:
+ Edit → Preferences → SQL Editor → DBMS connection read time out (in seconds): 600
+
+Then change the value to 99999.
+
 ## Creating the Schema
 `CREATE SCHEMA 'microdados_mb';`
 
