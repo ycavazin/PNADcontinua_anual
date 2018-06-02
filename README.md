@@ -22,7 +22,7 @@ TXT files from IBGE can be found [here](https://downloads.ibge.gov.br/downloads_
 
 ### Modifications on live mysql
 
-* *Error_Code: 1206*
+* *Error_Code: 1206 => The total number of locks exceeds the lock table size*
 
 First show current variable size:
 
@@ -32,7 +32,15 @@ Changed innodb_buffer_pool_size to 402653184 directly at SQL
 
 mysql> `SET GLOBAL innodb_buffer_pool_size=402653184;`
 
-* *Error_Code:* 
+* *Error_Code: 1290 => The MySQL server is running with the --secure-file-priv option so it cannot execute this statement* 
+
+First show current variable path:
+
+mysql> `SHOW VARIABLES LIKE "secure_file_priv";`
+
+Then, execute the Insert with the variable value in the beggining of the file path:
+
+mysql> `LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\PNADC_2012_entr1_20180504.txt'`
 
 ## Creating the Schema
 `CREATE SCHEMA 'microdados_mb';`
