@@ -57,3 +57,7 @@ Use .sql file #1
 
 *Note: In order to have a better view of each publication made by IBGE, a column named "edicao" was created*
 
+## Placing the files to upload
+
+The path in Windows to place the files is:
+`C:\ProgramData\MySQL\MySQL Server 8.0\Uploads`
